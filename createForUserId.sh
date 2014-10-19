@@ -4,6 +4,8 @@ export PATH="`pwd`/sdk/tools/":"./node_modules/.bin/":$PATH
 export ANDROID_HOME="`pwd`/sdk"
 echo "userId=$userId" > www/js/userId.js
 
+./node_modules/.bin/ionic platform android
+
 wget --quiet $picurl -O tmpUrl.jpg
 
 convert tmpUrl.jpg -resize 96x96 ./platforms/android/res/drawable/icon.png
