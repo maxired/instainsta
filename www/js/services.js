@@ -6,7 +6,6 @@ angular.module('starter.services', ['ngResource'])
 .factory('FeedService', ['$resource',
   function($resource) {
 
-    var userId = 3;
     var clientId = "304f2cdd2b3646a38895c48d9a4e80a7";
     var url = "https://api.instagram.com/v1/users/" + userId + "/media/recent/?client_id=" + clientId;
 

@@ -4,11 +4,11 @@
 <ion-view title="Post Page">
   <ion-content padding="true" class="center">
   <div class="main">
-  	<p> {{post.caption.text}}</p>
+  	<p class="caption">{{post.caption.text}}</p>
   	<img src="{{post.images.standard_resolution.url}}" />
   	<p>{{post.likes.count}} Likes </p>
   </div>
-    <ion-item ng-repeat="comment in post.comments.data" type="item-text-wrap">
+    <ion-item ng-repeat="comment in post.comments.data" type="item-text-wrap"class="comments">
     <img class="profilPic" src="{{comment.from.profile_picture}}"/>
     {{comment.text}}<br/>
     {{comment.from.full_name}}
