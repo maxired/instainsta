@@ -5,10 +5,13 @@ InstaInsta is a sample App displaying the instagram feed of one user.
 
 #Content
 
-A demo is available on [here](http://54.172.18.170:3000)
+A demo is available on [here](http://54.172.18.170:3000).
 It consist of a web page displaying the Instagram feed of a user.
 
 You can also get a custom APK dedicated to a user or on [http://54.172.18.170:3000/android/<username>](http://54.172.18.170:3000/android/<username>), for example [http://54.172.18.170:3000/android/barackobama](http://54.172.18.170:3000/android/barackobama ) 
+
+The front is powered by Ionic framework and based on [ionic angular cordova seed](https://github.com/driftyco/ionic-angular-cordova-seed).
+The web server is a NodeJS server.
 
 
 #Installation
