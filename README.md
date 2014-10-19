@@ -15,13 +15,13 @@ The web server is a NodeJS server.
 
 
 #Installation
-##dependencies
+##Dependencies
 The software is designed to run on linux.
-When running on a 64 bits host, 32 bits compatibiblity library might be needed for aapt to be working
+When running on a 64 bits host, 32 bits compatibility libraries might be needed for aapt to be working
 
 We tryed to minimised dependencies, and embed lots of stuff in the repo. Still you will need to have a JDK installed on your system.
 
-###
+##Installing NodeJs dependencies
 ```npm i```
 
 #Running
