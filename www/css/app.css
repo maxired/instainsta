@@ -6,3 +6,53 @@
   width: 96px;
   height: 96px;
 }
+
+.center{
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	max-width: 100%;
+}
+
+.main{
+	text-align: center;
+}
+
+.profilPic{
+	width:64px;
+}
+
+.item-content{
+	min-height: 150px;
+}
+
+.thumbnail{
+	width: 150px;
+	height: 150px;
+	display: block;
+	position: absolute;
+	top: 0px ;
+	left :0px;
+}
+
+.comment{
+	display: block;
+	width: 100%;
+	white-space: normal;
+	margin-top: 20px;
+	margin-left: 20px;
+	position: absolute;
+	top: 0px;
+	width: calc(100% - 150px);
+	right: 0px;
+}
+
+.info{
+	position: absolute;
+	bottom: 0;
+	width: calc(100% - 150px);
+	right: 0;
+	height: 20px;
+}

@@ -1,26 +1,23 @@
-angular.module('starter.services', [])
+angular.module('starter.services', ['ngResource'])
 
 /**
  * A simple example service that returns some data.
  */
-.factory('PetService', function() {
-  // Might use a resource here that returns a JSON array
+.factory('FeedService', ['$resource',
+  function($resource) {
 
-  // Some fake testing data
-  var pets = [
-    { id: 0, title: 'Cats', description: 'Furry little creatures. Obsessed with plotting assassination, but never following through on it.' },
-    { id: 1, title: 'Dogs', description: 'Lovable. Loyal almost to a fault. Smarter than they let on.' },
-    { id: 2, title: 'Turtles', description: 'Everyone likes turtles.' },
-    { id: 3, title: 'Sharks', description: 'An advanced pet. Needs millions of gallons of salt water. Will happily eat you.' }
-  ];
+    var userId = 3;
+    var clientId = "304f2cdd2b3646a38895c48d9a4e80a7";
+    var url = "https://api.instagram.com/v1/users/" + userId + "/media/recent/?client_id=" + clientId;
 
-  return {
-    all: function() {
-      return pets;
-    },
-    get: function(petId) {
-      // Simple index lookup
-      return pets[petId];
-    }
+    return $resource(url, {
+      callback: "JSON_CALLBACK"
+    }, {
+      getPosts: {
+        method: "JSONP",
+        isArray: false
+      }
+    });
+
   }
-});
+])
