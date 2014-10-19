@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export PATH="`pwd`/sdk/tools/":"./node_modules/.bin/":$PATH
+export PATH="`pwd`/sdk/tools/":"`pwd`/node_modules/.bin/":"`pwd`/bin/":$PATH
 export ANDROID_HOME="`pwd`/sdk"
 echo "userId=$userId" > www/js/userId.js
 
