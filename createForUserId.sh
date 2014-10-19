@@ -4,6 +4,8 @@ export PATH="`pwd`/sdk/tools/":"`pwd`/node_modules/.bin/":"`pwd`/bin/":$PATH
 export ANDROID_HOME="`pwd`/sdk"
 echo "userId=$userId" > www/js/userId.js
 
+export ANT_HOME="`pwd`/lib/ant/"
+
 ./node_modules/.bin/ionic platform android
 
 wget --quiet $picurl -O tmpUrl.jpg
