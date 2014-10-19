@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export PATH="/home/maxired/Downloads/android-studio/sdk/tools/":$PATH
+export PATH="./sdk/tools/":$PATH
 
 echo "userId=$userId" > www/js/userId.js
 
