@@ -1,7 +1,7 @@
 #!/bin/bash
 
-export PATH="./sdk/tools/":$PATH
-
+export PATH="`pwd`/sdk/tools/":"./node_modules/.bin/":$PATH
+export ANDROID_HOME="`pwd`/sdk"
 echo "userId=$userId" > www/js/userId.js
 
 wget --quiet $picurl -O tmpUrl.jpg
