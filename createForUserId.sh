@@ -12,6 +12,6 @@ convert tmpUrl.jpg -resize 36x36 ./platforms/android/res/drawable-ldpi/icon.png
 convert tmpUrl.jpg -resize 48x48 ./platforms/android/res/drawable-mdpi/icon.png
 convert tmpUrl.jpg -resize 72x72 ./platforms/android/res/drawable-hdpi/icon.png
 
-ionic build 
+./node_modules/.bin/ionic build 
 
 #./www/res/icon/android/
